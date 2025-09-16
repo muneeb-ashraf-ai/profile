@@ -7,136 +7,107 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Muneeb Ashraf</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="jobs.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="assets/pdf/Muneeb_Ashraf_Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="main-header">
     <h1>💻 Projects</h1>
-    <a href="index.html">⬅ Back to Home</a>
   </header>
 
-  <main>
-    <section class="project-section">
-      <div class="project-card">
-        <h2>Student Management System</h2>
-        <div class="project-details">
-          <p>This project is a Student Management System, a RESTful API built with FastAPI. It handles student, course, and enrollment data using CRUD operations. The system features secure JWT-based user authentication with role-based access control (Admin vs. regular user) and password hashing. It uses SQLAlchemy with a SQLite database for data persistence and Pydantic for data validation.</p>
+  <main class="container">
+    <section class="section">
+      <h2 class="section-title">My Work</h2>
+      <div class="card-grid">
+        <div class="card project-card">
+          <img src="assets/images/SMS_POSTER.png" alt="Student Management System">
+          <div class="project-overlay">
+            <h3>Student Management System</h3>
+            <p>A RESTful API with FastAPI for managing students, courses, and enrollments with JWT authentication.</p>
+            <a href="https://github.com/alphaaa-m/Student_Management_System" target="_blank" class="btn">View on GitHub</a>
+          </div>
         </div>
-        <div class="project-link-section">
-          <h3>GitHub Link:</h3>
-          <a href="https://github.com/alphaaa-m/Student_Management_System" target="_blank" class="github-link-new">
-            https://github.com/alphaaa-m/Student_Management_System
-          </a>
+        <div class="card project-card">
+          <img src="assets/images/Chess_Game-Cover.png" alt="Chess Game Engine">
+          <div class="project-overlay">
+            <h3>Chess Game Engine</h3>
+            <p>A command-line chess game in Python using OOP principles.</p>
+            <a href="https://github.com/alphaaa-m/Chess_Game_Engine" target="_blank" class="btn">View on GitHub</a>
+          </div>
         </div>
-        <img src="assets/images/SMS_POSTER.png" alt="Poster for Student Management System project" class="project-poster">
-      </div>
-    </section>
-    <section class="project-section">
-      <div class="project-card">
-        <h2>Chess Game Engine</h2>
-        <div class="project-details">
-          <p>This project is a simple command-line Chess Game Engine implemented in Python. It utilizes Object-Oriented Programming (OOP) principles to create an 8x8 chessboard and represent chess pieces as objects with their unique movement logic. The engine handles player turns, validates moves (e.g., preventing friendly fire and illegal paths), and provides a basic text-based interface for gameplay. Key features include an abstract Piece class and subclasses for each chess piece, showcasing concepts like inheritance and polymorphism. Future improvements could include special moves and a graphical interface.</p>
+        <div class="card project-card">
+          <img src="assets/images/House_Price_Prediction_Cover.png" alt="House Price Prediction">
+          <div class="project-overlay">
+            <h3>House Price Prediction</h3>
+            <p>Comparing various regression models to predict house prices.</p>
+            <a href="https://github.com/alphaaa-m/House_Price_Prediction-Basic" target="_blank" class="btn">View on GitHub</a>
+          </div>
         </div>
-        <div class="project-link-section">
-          <h3>GitHub Link:</h3>
-          <a href="https://github.com/alphaaa-m/Chess_Game_Engine" target="_blank" class="github-link-new">
-            https://github.com/alphaaa-m/Chess_Game_Engine
-          </a>
+        <div class="card project-card">
+          <img src="assets/images/Hear_Disease_Cover.png" alt="Heart Disease Prediction">
+          <div class="project-overlay">
+            <h3>Heart Disease Prediction</h3>
+            <p>Using ML to predict heart disease from clinical data.</p>
+            <a href="https://github.com/alphaaa-m/Heart_Disease_Prediction" target="_blank" class="btn">View on GitHub</a>
+          </div>
         </div>
-        <img src="assets/images/Chess_Game-Cover.png" alt="Poster for Chess Game Engine project" class="project-poster">
-      </div>
-    </section>
-
-    <section class="project-section">
-      <div class="project-card">
-        <h2>House Price Prediction</h2>
-        <div class="project-details">
-          <p>This project is focused on predicting house prices using various machine learning models. It evaluates and compares the performance of linear, non-linear, and tree-based regression models on a dataset containing features like area, bedrooms, and location. The project's key steps include data preprocessing, model implementation, and performance evaluation using metrics like $R^2$ score, MAE, and MSE. The analysis concluded that Gradient Boosting and Random Forest Regressor were the top-performing models due to their superior accuracy in capturing non-linear relationships. The project suggests future improvements like hyperparameter tuning and cross-validation to further enhance model performance.</p>
+        <div class="card project-card">
+          <img src="assets/images/CNN.jpg" alt="Brain Tumor Detection">
+          <div class="project-overlay">
+            <h3>Brain Tumor Detection</h3>
+            <p>A CNN model to detect brain tumors from MRI images.</p>
+            <a href="https://github.com/alphaaa-m/Brain_Tumor_Detection" target="_blank" class="btn">View on GitHub</a>
+          </div>
         </div>
-        <div class="project-link-section">
-          <h3>GitHub Link:</h3>
-          <a href="https://github.com/alphaaa-m/House_Price_Prediction-Basic" target="_blank" class="github-link-new">
-            https://github.com/alphaaa-m/House_Price_Prediction-Basic
-          </a>
+        <div class="card project-card">
+          <img src="assets/images/CCFD.jpg" alt="Credit Card Fraud Detection">
+          <div class="project-overlay">
+            <h3>Credit Card Fraud Detection</h3>
+            <p>A Random Forest model to detect fraudulent credit card transactions.</p>
+            <a href="https://github.com/alphaaa-m/Credit_Card_Fraud_Detection" target="_blank" class="btn">View on GitHub</a>
+          </div>
         </div>
-        <img src="assets/images//House_Price_Prediction_Cover.png" alt="Poster for House Price Prediction project" class="project-poster">
-      </div>
-    </section>
-
-    <section class="project-section">
-      <div class="project-card">
-        <h2>Heart Disease Prediction</h2>
-        <div class="project-details">
-          <p>This project tackles heart disease prediction using machine learning. It uses clinical and demographic data like age and cholesterol levels to build and evaluate four models: Logistic Regression, Support Vector Machine (SVM), Decision Tree Classifier, and Random Forest Classifier. The data was preprocessed by handling missing values, encoding categorical features, and scaling numerical ones. Random Forest Classifier was found to be the most accurate model, achieving 89% accuracy. Future work involves using techniques like hyperparameter tuning and exploring boosting algorithms.</p>
+        <div class="card project-card">
+          <img src="assets/images/student_performance_analysis.png" alt="Student Performance Analysis">
+          <div class="project-overlay">
+            <h3>Student Performance Analysis</h3>
+            <p>Using Multiple Linear Regression to predict student performance.</p>
+            <a href="https://github.com/alphaaa-m/Student_Performance" target="_blank" class="btn">View on GitHub</a>
+          </div>
         </div>
-        <div class="project-link-section">
-          <h3>GitHub Link:</h3>
-          <a href="https://github.com/alphaaa-m/Heart_Disease_Prediction" target="_blank" class="github-link-new">
-            https://github.com/alphaaa-m/Heart_Disease_Prediction
-          </a>
-        </div>
-        <img src="assets/images/Hear_Disease_Cover.png" alt="Poster for Heart Disease Prediction project" class="project-poster">
-      </div>
-    </section>
-
-
-    <section class="project-section">
-      <div class="project-card">
-        <h2>Brain Tumor Detection</h2>
-        <div class="project-details">
-          <p>This project uses a Convolutional Neural Network (CNN) to detect brain tumors from MRI images, classifying them as either "present" or "absent". The model, built with TensorFlow and Keras, was trained on a preprocessed dataset of images resized to 64x64 pixels. After training for 10 epochs, the CNN achieved an accuracy of 98.79% with a loss of 0.0924. The model can be saved and reloaded to predict on new images.</p>
-        </div>
-        <div class="project-link-section">
-          <h3>GitHub Link:</h3>
-          <a href="https://github.com/alphaaa-m/Brain_Tumor_Detection" target="_blank" class="github-link-new">
-            https://github.com/alphaaa-m/Brain_Tumor_Detection
-          </a>
-        </div>
-        <img src="assets/images/CNN.jpg" alt="Poster for Brain Tumor Detection project" class="project-poster">
       </div>
     </section>
 
-    <section class="project-section">
-      <div class="project-card">
-        <h2>Credit Card Fraud Detection</h2>
-        <div class="project-details">
-          <p>This project is a machine learning model for detecting credit card fraud using a Random Forest Classifier. It analyzes transaction data, including anonymized features from PCA, time, and amount. To address data imbalance, it balances the dataset by matching the number of fraudulent and normal transactions. The model achieved an accuracy of 93.9% and was evaluated with a confusion matrix and classification report to confirm its ability to distinguish between legitimate and fraudulent transactions.</p>
+    <section class="section">
+        <h2 class="section-title">Other Projects</h2>
+        <div class="card">
+            <ul>
+                <li><b>Breast Cancer Diagnostic:</b> An SVM-based diagnostic classifier for early breast cancer detection.</li>
+                <li><b>Diabetes Classification:</b> A Decision Tree model for classifying diabetes based on patient data.</li>
+                <li><b>MNIST Digit Recognition:</b> An Artificial Neural Network (ANN) that accurately recognizes handwritten digits from the MNIST dataset.</li>
+                <li><b>CIFAR Image Classification:</b> A project exploring various CNN architectures for image classification on the CIFAR-10 and CIFAR-100 datasets.</li>
+                <li><b>Career ChatBot:</b> An API-integrated chatbot that provides career recommendations.</li>
+                <li><b>Ride Sharing Simulation:</b> A basic ride-sharing simulation built with Object-Oriented Programming (OOP) to model drivers, riders, and rides.</li>
+            </ul>
         </div>
-        <div class="project-link-section">
-          <h3>GitHub Link:</h3>
-          <a href="https://github.com/alphaaa-m/Credit_Card_Fraud_Detection" target="_blank" class="github-link-new">
-            https://github.com/alphaaa-m/Credit_Card_Fraud_Detection
-          </a>
-        </div>
-        <img src="assets/images/CCFD.jpg" alt="Poster for Credit Card Fraud Detection project" class="project-poster">
-      </div>
-    </section>
-
-    <section class="project-section">
-      <div class="project-card">
-        <h2>Student Performance Analysis</h2>
-        <div class="project-details">
-          <p>This project uses Multiple Linear Regression to predict a student's Performance Index based on a Kaggle dataset. Key features analyzed include studying hours, sleep habits, and extracurricular activities. The process involved data preprocessing (cleaning, label encoding), correlation analysis, and model training. The model achieved a high $R^2$ score of 91.6%, with visualizations confirming a strong relationship between the chosen features and academic performance.</p>
-        </div>
-        <div class="project-link-section">
-          <h3>GitHub Link:</h3>
-          <a href="https://github.com/alphaaa-m/Student_Performance" target="_blank" class="github-link-new">
-            https://github.com/alphaaa-m/Student_Performance
-          </a>
-        </div>
-        <img src="assets/images/student_performance_analysis.png" alt="Poster for Student Performance Analysis project" class="project-poster">
-      </div>
-    </section>
-
-
-    <section class="other-projects">
-      <h2>Other Projects</h2>
-      <ul>
-        <li><b>Breast Cancer Diagnostic:</b> An SVM-based diagnostic classifier for early breast cancer detection.</li>
-        <li><b>Diabetes Classification:</b> A Decision Tree model for classifying diabetes based on patient data.</li>
-        <li><b>MNIST Digit Recognition:</b> An Artificial Neural Network (ANN) that accurately recognizes handwritten digits from the MNIST dataset.</li>
-        <li><b>CIFAR Image Classification:</b> A project exploring various CNN architectures for image classification on the CIFAR-10 and CIFAR-100 datasets.</li>
-        <li><b>Career ChatBot:</b> An API-integrated chatbot that provides career recommendations.</li>
-        <li><b>Ride Sharing Simulation:</b> A basic ride-sharing simulation built with Object-Oriented Programming (OOP) to model drivers, riders, and rides.</li>
-      </ul>
     </section>
   </main>
+
+  <footer class="main-footer">
+    <p>&copy; 2025 Muneeb Ashraf. All rights reserved.</p>
+  </footer>
+
+  <script src="assets/js/script.js"></script>
 </body>
 </html>

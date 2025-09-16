@@ -7,84 +7,109 @@
   <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
-  <header>
+  <nav class="main-nav">
+    <div class="container">
+      <a href="index.html" class="nav-logo">Muneeb Ashraf</a>
+      <ul class="nav-links">
+        <li><a href="index.html">Home</a></li>
+        <li><a href="education.html">Education</a></li>
+        <li><a href="jobs.html">Experience</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="skills.html">Skills</a></li>
+        <li><a href="contact.html">Contact</a></li>
+        <li><a href="assets/pdf/Muneeb_Ashraf_Resume.pdf" target="_blank">Resume</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <header class="main-header">
     <h1>🛠️ Skills</h1>
-    <a href="index.html">⬅ Back to Home</a>
   </header>
 
-  <main>
-    <section class="intro-section">
-      <div class="content-box">
+  <main class="container">
+    <section class="section">
+      <div class="card">
         <h2>My Skills: The Toolkit of a Problem-Solver</h2>
         <p>My journey from a mathematician to an AI enthusiast has equipped me with a diverse set of skills. While my technical abilities allow me to build and analyze, my soft skills—honed through years of teaching and leadership—are what truly help me collaborate and innovate. This is my professional toolkit, refined by both academic rigor and real-world application.</p>
       </div>
     </section>
     
-    <section class="story-section skills-section">
-      <div class="content-box">
-        <h2 class="section-title">Technical Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">
-                <h3>Programming Languages & Libraries</h3>
-                <ul>
-                    <li><strong>Python</strong> - Intermediate proficiency with libraries like NumPy, Pandas, Matplotlib, Seaborn, and Scikit-learn.</li>
-                    <li><strong>SQL</strong> - Basic proficiency, including database design.</li>
-                    <li><strong>FastAPI & SQLAlchemy</strong> - Basic proficiency in building CRUD APIs.</li>
-                    <li><strong>TensorFlow/Keras</strong> - Basic proficiency.</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>Machine Learning & Concepts</h3>
-                <ul>
-                    <li><strong>Machine Learning</strong> - Intermediate knowledge of model development.</li>
-                    <li><strong>Deep Learning</strong> - Basic knowledge of deep neural networks.</li>
-                    <li><strong>OOP & DSA</strong> - Intermediate in Object-Oriented Programming and basic in Data Structures and Algorithms.</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>Tools & Platforms</h3>
-                <ul>
-                    <li><strong>Anaconda (Jupyter Notebook)</strong> - Intermediate proficiency.</li>
-                    <li><strong>Microsoft Office</strong> - Intermediate proficiency.</li>
-                    <li><strong>LaTeX (OverLeaf)</strong> - Basic proficiency.</li>
-                    <li><strong>Canva</strong> - Basic proficiency.</li>
-                </ul>
-            </div>
+    <section class="section">
+      <h2 class="section-title">Technical Skills</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Programming & Libraries</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Python</span>
+            <span class="skill-tag">NumPy</span>
+            <span class="skill-tag">Pandas</span>
+            <span class="skill-tag">Matplotlib</span>
+            <span class="skill-tag">Seaborn</span>
+            <span class="skill-tag">Scikit-learn</span>
+            <span class="skill-tag">SQL</span>
+            <span class="skill-tag">FastAPI</span>
+            <span class="skill-tag">SQLAlchemy</span>
+            <span class="skill-tag">TensorFlow/Keras</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>ML & Concepts</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Machine Learning</span>
+            <span class="skill-tag">Deep Learning</span>
+            <span class="skill-tag">OOP</span>
+            <span class="skill-tag">Data Structures</span>
+            <span class="skill-tag">Algorithms</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Tools & Platforms</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Jupyter Notebook</span>
+            <span class="skill-tag">Microsoft Office</span>
+            <span class="skill-tag">LaTeX</span>
+            <span class="skill-tag">Canva</span>
+            <span class="skill-tag">Git & GitHub</span>
+          </div>
         </div>
       </div>
     </section>
 
-    <section class="story-section skills-section">
-      <div class="content-box">
-        <h2 class="section-title">Soft Skills</h2>
-        <div class="skills-container">
-            <div class="skill-card">
-                <h3>Interpersonal Skills</h3>
-                <ul>
-                    <li><strong>Communication</strong> - Good, honed by teaching and organizing seminars.</li>
-                    <li><strong>Emotional Intelligence</strong> - Excellent, for fostering a positive work environment.</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>Professional Attributes</h3>
-                <ul>
-                    <li><strong>Time Management</strong> - Excellent, demonstrated by balancing multiple roles.</li>
-                    <li><strong>Adaptability & Resilience</strong> - Excellent, developed through navigating career challenges.</li>
-                    <li><strong>Creativity & Leadership</strong> - Excellent creativity and good leadership from my involvement in university societies.</li>
-                </ul>
-            </div>
-            <div class="skill-card">
-                <h3>Language Skills</h3>
-                <ul>
-                    <li><strong>Urdu</strong> - Fluent (C2 in listening, reading, speaking; C1 in writing).</li>
-                    <li><strong>English</strong> - Highly Proficient (IELTS overall 7.0).</li>
-                </ul>
-            </div>
+    <section class="section">
+      <h2 class="section-title">Soft Skills</h2>
+      <div class="card-grid">
+        <div class="card">
+          <h3>Interpersonal</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Communication</span>
+            <span class="skill-tag">Emotional Intelligence</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Professional Attributes</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Time Management</span>
+            <span class="skill-tag">Adaptability</span>
+            <span class="skill-tag">Resilience</span>
+            <span class="skill-tag">Creativity</span>
+            <span class="skill-tag">Leadership</span>
+          </div>
+        </div>
+        <div class="card">
+          <h3>Languages</h3>
+          <div class="skills-container">
+            <span class="skill-tag">Urdu (Fluent)</span>
+            <span class="skill-tag">English (Proficient)</span>
+          </div>
         </div>
       </div>
     </section>
   </main>
   
+  <footer class="main-footer">
+    <p>&copy; 2025 Muneeb Ashraf. All rights reserved.</p>
+  </footer>
+
   <script src="assets/js/script.js"></script>
 </body>
 </html>
