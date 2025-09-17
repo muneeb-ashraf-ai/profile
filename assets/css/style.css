@@ -14,6 +14,13 @@
     box-sizing: border-box;
 }
 
+/* Make media scale fluidly */
+img, video {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
 body {
     font-family: 'Poppins', sans-serif;
     background-color: var(--primary-color);
@@ -181,13 +188,14 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Cards */
 .card-grid {
-    display: inline-block;
+    /* Grid container for cards */
     padding: 5rem;
     background: var(--primary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     text-align: center;
     display: grid;
-    grid-template-columns: center;
+    /* Responsive columns without changing visual style */
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
 }
 
@@ -220,7 +228,7 @@ h1, h2, h3, h4, h5, h6 {
 .project-card img {
     width: 100%;
     height: 500px;
-    /* object-fit: cover; */
+    object-fit: cover;
     border-radius: 5px;
     margin-bottom: 1rem;
     transition: transform 0.4s ease;
@@ -354,11 +362,51 @@ h1, h2, h3, h4, h5, h6 {
     .nav-links {
         display: none; /* Simple hide for now, can be replaced with a burger menu */
     }
+    .container {
+        width: 92%;
+        padding: 1.5rem 0;
+    }
+    .main-header {
+        padding: 2.5rem 0;
+    }
+    .profile-card {
+        padding: 1.5rem;
+    }
+    .profile-card img {
+        width: 70vw;
+        height: auto;
+        max-width: 320px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .card-grid {
+        padding: 1.5rem;
+        grid-template-columns: 1fr; /* Ensure single column on narrow screens */
+        gap: 1.25rem;
+    }
+    .card {
+        padding: 1.25rem;
+    }
+    .project-card img {
+        height: 220px; /* Avoid overly tall images on phones */
+    }
     .profile-card h1 {
         font-size: 2rem;
     }
     .section-title {
         font-size: 2rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .nav-logo {
+        font-size: 1.6rem;
+    }
+    .section {
+        padding: 3rem 0;
+    }
+    .section-title {
+        font-size: 1.75rem;
     }
 }
 
