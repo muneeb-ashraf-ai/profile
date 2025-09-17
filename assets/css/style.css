@@ -67,31 +67,30 @@ h1, h2, h3, h4, h5, h6 {
     display: flex;
     justify-content: space-between;
     align-items: center;
-  padding: 1rem;
-  flex-wrap: wrap; /* allow items to wrap when screen is small */
+    padding: 1rem;
+    flex-wrap: wrap; /* allow items to wrap when screen is small */
 }
 
-/* Stack vertically only on small screens */
-@media (max-width: 768px) {
-  .main-nav .container {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+/* Remove slide-in hidden default; keep sticky header behavior defined above */
 
-  .nav-links {
-    flex-direction: column;
-    width: 100%;
-  }
 
-  .nav-links li {
-    margin: 0.5rem 0;
-  }
-}
+/* (removed redundant early mobile nav block; consolidated below) */
 
 .nav-logo {
   font-size: 2rem;
     font-weight: 700;
     color: #fff;
+}
+
+/* Menu button (shown primarily on small screens) */
+#menu-btn {
+        display: none;
+        background: var(--secondary-color);
+        color: #fff;
+        border: 1px solid #333;
+        padding: 0.5rem 0.75rem;
+        border-radius: 6px;
+        cursor: pointer;
 }
 
 .nav-links {
@@ -204,7 +203,6 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Cards */
 .card-grid {
-    display: inline-block;
     padding: 5rem;
     background: var(--primary-color);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -213,13 +211,6 @@ h1, h2, h3, h4, h5, h6 {
     /* Responsive columns without changing visual style */
     grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
     gap: 2rem;
-}
-
-.cards-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
-  gap: 1rem; /* space between cards */
-  justify-items: center; /* centers items in their grid cells */
 }
 
 .card {
@@ -382,8 +373,24 @@ h1, h2, h3, h4, h5, h6 {
 
 /* Responsive */
 @media (max-width: 768px) {
+    #menu-btn {
+        display: inline-block;
+        margin-left: auto;
+    }
+    /* Collapse nav list by default on small screens; show when nav is active */
+    .main-nav:not(.active) .nav-links {
+        display: none;
+    }
+    .main-nav .container {
+        gap: 0.5rem;
+        align-items: flex-start;
+        flex-direction: column;
+    }
     .nav-links {
-        display: none; /* Simple hide for now, can be replaced with a burger menu */
+        display: flex;
+        flex-direction: column;
+        gap: 0.5rem 1rem;
+        width: 100%;
     }
     .container {
         width: 92%;
