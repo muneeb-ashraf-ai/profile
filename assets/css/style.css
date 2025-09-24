@@ -209,7 +209,7 @@ h1, h2, h3, h4, h5, h6 {
     text-align: center;
     display: grid;
     /* Responsive columns without changing visual style */
-    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    grid-template-columns: center;
     gap: 2rem;
 }
 
